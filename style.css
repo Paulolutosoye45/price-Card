@@ -3,3 +3,108 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+}
+.grid-item {
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.header {
+    background-color: white;
+    padding: 25px;
+}
+.header h2 {
+    color: #2ab2af;
+   margin-bottom: 20px;
+}
+.header h4 {
+    color: #c0df34;
+    margin-bottom: 10px;
+}
+.header p {
+    color: #98a6bd;
+}
+.bottom {
+    display: flex;
+    
+}
+.Monthly {
+    flex-basis: 50%;
+    padding: 25px;
+    color: whitesmoke;
+    background-color: #2ab2af;
+   
+}
+.Monthly h3 {
+    margin-bottom:20px;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.Monthly p {
+    margin-bottom: 20px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.price p {
+    position: relative;
+    font-size: 17px;
+    color: whitesmoke;
+}
+.Monthly button  {
+    color: whitesmoke;
+    background-color: #c0df34;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+.Monthly button:hover {
+       cursor: pointer;
+      background-color: #a9c42d;
+      transform: scale(1.02);
+}
+.price h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.Why_us {
+    color: whitesmoke;
+    flex-basis: 50%;
+    padding: 25px;
+    background-color: #2ebfbd;
+}
+.Why_us h3 {
+    margin-bottom: 20px;
+}
+.Why_us li {
+    padding: 0px;
+    list-style: none;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 7px;
+}
+@media (max-width: 576px) {
+ .grid-item {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+ }
+ .bottom {
+    display: flex;
+    flex-direction: column;
+ }
+}
